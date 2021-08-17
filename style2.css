@@ -1,0 +1,317 @@
+body{
+    background-image: url("estrellas.jpg");
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.cont-bb8{
+    margin: 120px 100px;
+    height: 350px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    animation: moverse 5s infinite linear alternate;
+    transform:scale(.6);
+    transition:.4s;
+}
+.cont-antenas{
+    position: relative;
+    top: -165px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    animation: rotar_ojos 3s infinite linear alternate;
+}
+.cont-antenas .antena{
+    border: 2px solid #fff;
+    margin: 0 5px;
+}
+.cont-antenas  .antena1{
+    height: 50px;
+    margin-top: 8em;
+}
+.cont-antenas  .antena2{
+    height: 120px;
+    margin-top: 6.2em;
+}
+.cont-antenas .antena2::before{
+    content: "";
+    height: 10px;
+    border: 2px solid #000;
+    position: absolute;
+    margin: -2px -2px;
+}
+.cont-antenas .antena2::after{
+    content: "";
+    height: 50px;
+    border: 2px solid #000;
+    position: absolute;
+    margin: 40px -2px;
+}
+.cont-cabeza{
+    height: 115px;
+    width: 180px;
+    margin-top: -250px;
+    border-radius: 0 0 10px 10px;
+    /* border: 2px solid green;*/
+    position: absolute;
+    overflow: hidden;
+    display: grid;
+    z-index: 20;
+    justify-content: center; 
+}
+.cabeza{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+.rayas{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+.raya1{
+    border: 7px solid #ccc;
+}
+.raya2{
+    border: 4px solid rgb(250, 93, 36);
+}
+.raya3{
+    border: 3px solid #ccc;
+}
+
+/****ojos***/
+.ojos{
+    margin-top: -40px;
+    margin-left: -20px;
+    animation-delay: 5s;
+    animation: rotar_ojos 4s infinite linear;
+}
+.ojo1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 0 50px;
+    border: 6px solid #fff;
+}
+.ojo1 .punto-blanco{
+    height: 7px;
+    width: 7px;
+    margin: 7px 20px;
+    border-radius: 50%;
+    background-color:#fff;
+}
+.ojo2{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: -13px 92px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ojo2 .ojo-interno{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.barra-conte{
+    position: absolute;
+    display: flex;
+}
+.span{
+    background-color: rgb(250, 93, 36);
+    margin: 0 1px;
+    width: 10px;
+}
+.barra1{
+    height: 10px;
+    margin: 22px 5px;
+}
+.barra2{
+    height: 10px;
+    margin: 22px 5px;
+}
+.barra3{
+    height: 20px;
+    width: 30px;
+    margin: 17px 5px;
+}
+
+
+/***cuerpo estilos**/
+
+.cont-cuerpo{
+    height: 250px;
+    width: 250px;
+    margin-top: -20px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    animation: 2s rotar infinite linear;
+    box-shadow: 0 0 10px rgb(41, 39, 39),0 0 20px rgb(41, 39, 39);
+    transition:.4s;
+}
+.circle{
+    position: relative;
+    border: 1em solid  rgb(250, 93, 36);
+    border-radius: 50%;
+    z-index: 10;
+    background-color: #fff;
+}
+.circle1{
+    height: 100px;
+    width: 100px;
+    margin: 10px 60px;
+}
+.border{
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    display: block;
+    background-color: rgb(250, 93, 36);
+}
+.border1{
+    border-radius: 0 0 2px 2px;
+    margin: 0px 43px;
+}
+.border2{
+    border-radius: 2px 2px 0 0;
+    margin: 80px 43px;
+}
+.border3{
+    border-radius: 2px 2px  0 0;
+    margin:33px -5px;
+}
+.border4{
+    border-radius: 2px 2px  0 0;
+    margin:33px 80px;
+}
+.circle2{
+    margin: 24px -60px;
+    width: 120px;
+    height: 120px;
+}
+.circle3{
+    margin: -14em 190px;
+    width: 120px;
+    height: 120px;
+}
+.linea{
+    width: 20em;
+    border: 2px solid rgb(177, 177, 177);
+    display: block;
+}
+.linea1{
+    transform: rotate(37deg);
+    margin-top: 70px;
+}
+.linea2{
+    transform: rotate(-45deg);
+    margin-top: -50px;
+}
+.sombra{
+    height: 120px;
+    width: 240px;
+    border-radius: 50%;
+    position: absolute;
+    top: 17.5em;
+    background-color:rgb(0 ,0 ,0,0.4);
+    transform: rotateX(70deg) ;
+}
+.suelo{
+    width: 100%;
+    background-color:rgb(138,118,90);
+    height: 500px;
+    margin-top: -400px;
+    text-align: center;
+}
+
+@keyframes rotar_ojos{
+0%{
+    transform: translateX(0);
+}
+25%,50%{
+    transform: translateX(50px);
+}
+50%,75%{
+    transform: translateX(50px);
+}
+75%,100%{
+     transform: translateX(-7px);
+}
+}
+/*botones del menu*/
+:root {
+    --bg: #1a1e24;
+    --color: #eee;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    padding: 1.5rem 0;
+    filter: url('#goo');
+}
+
+.button {
+    margin: 20%;
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    margin-left: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}

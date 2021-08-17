@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>PERSONAJES STAR WARS</title>
+    <meta charset="UTF-8">
+    <meta name="title" content="Natoon World">
+    <meta name="description" content="Animation">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <!--Bb8-->
+    <audio id="player" autoplay loop><sourc src="https://res.cloudinary.com/diz8ym76r/video/upload/v1598672873/8-star-wars-sound-effect-demo_esi7og.mp3" type="audio/mp3"></audio>    
+            <div class="cont-bb8" id='padre'>
+                <div class="cont-antenas">
+                    <div class="antena antena1"></div>
+                    <div class="antena antena2"></div>
+                </div>
+                <div class="cont-cabeza">
+                    <div class="cabeza">
+                        <div class="rayas raya1"></div>
+                        <div class="rayas raya2"></div>
+                        <div class="rayas raya3"></div>
+        
+                        <div class="ojos">
+                            <div class="ojo1">
+                                <div class="punto-blanco"></div>
+                            </div>
+                            <div class="ojo2">
+                                <div class="ojo-interno"></div>
+                            </div>
+                        </div>
+        
+                        <div class="barra-conte">
+                            <div class="span barra1"></div>
+                            <div class="span barr2"></div>
+                            <div class="span barra3"></div>
+                        </div>
+                       
+                    </div>
+                </div>
+            
+        
+                <div class="cont-cuerpo" id='cuerpo'>
+                    <div class="circle circle1">
+                        <span class="border border1"></span>
+                        <span class="border border2"></span>
+                        <span class="border border3"></span>
+                        <span class="border border4"></span>
+                    </div>
+                    <div class="circle circle2"></div>
+                    <div class="circle circle3"></div>
+                   <span class="linea linea1"></span>
+                   <span class="linea linea2"></span>
+                </div>
+        
+                <div class="sombra"></div>
+            </div>
+        
+            <div class="suelo">
+                <section>
+                <div class="wrapper">
+                    <a class="button" href="index.html">Home</a>
+                    <a class="button" href="index3.html">Juego</a>
+                </div>
+                
+                <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+                <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                        </filter>
+                    </defs>
+                </svg>
+                </section>
+            </div>
+            <script src="star.js"></script>
+        
+              
+        
+</body>
+</html>

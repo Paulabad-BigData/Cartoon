@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+body{
+    background-image: url(0a45e03a0790b4f85d44415de1541dd8.png);
+    background-size: cover;
+}
+.container-all{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
+.main-title{
+    text-align: center;
+    font-size: 75px;
+    margin: auto;
+}
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-box a{
+    text-decoration: none;
+    color: black;
+}
+.box{
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.box:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+.box .icon,
+.box h4,
+.box p{
+    position: relative;
+    z-index: 1;
+    transition: all 200ms;
+}
+.box .icon{
+    font-size: 40px;
+    color: greenyellow;
+    transform: translateY(30px);
+}
+.box:hover .icon{
+    color: white;
+    font-size: 30px;
+    transform: translateY(0);
+}
+.box h4,
+.box p{
+    margin-top: 10px;
+}
+.box h4{
+    font-size: 30px;
+    transform: translateY(30px);
+}
+.box:hover h4{
+    transform: translateY(0);
+    color: white;
+}
+.box p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+}
+.box .background-hover{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(255,115,0), rgb(255,148,48));
+}
+.box:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+/* cambiar color de las diferentes cajas */
+
+.box1 .icon{
+    color:#0020C2;
+}
+.box1 .background-hover{
+    background: linear-gradient(to bottom, #0020C2, #6960EC);
+}
+/* en la caja 2 le cambie el sentido de la transition que salga de arriba */
+.box2 .icon{
+    color: #FF00FF;
+}
+.box2 .background-hover{
+    background: linear-gradient(to bottom, rgb(125, 118, 223), #F535AA);
+    top: -170px;
+    left: -250px;
+}
+/* le cambie el sentido de la transition caja 3 sale de abajo lado derecho */
+.box3 .icon{
+    color: violet;
+}
+.box3 .background-hover{
+    background: linear-gradient(to bottom, rgb(216, 13, 148), #200419);
+    top: 170px;
+    left: 500px;
+}
+.box4 .icon{
+    color: #571B7E;
+}
+.box4 .background-hover{
+    background: linear-gradient(to bottom, #00FF00, #a0d40f);
+    top: -170px;
+    left: -70px;
+}
